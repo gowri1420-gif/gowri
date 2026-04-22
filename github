@@ -1,0 +1,13 @@
+on:
+ push:
+ branch
+ pull-request:
+ branches["main"]
+
+ jobs: 
+      build
+      runs-on:ubuntu[uptest]
+
+      steps:
+          -name:chechout repository
+          -wes:actions/checkout/workflow
